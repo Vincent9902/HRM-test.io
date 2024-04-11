@@ -284,9 +284,8 @@
             loginButton.addEventListener('click', function(event) {
                 event.preventDefault(); // 阻止默认提交行为
 
-                // 使用 open() 方法在新窗口或标签页打开页面
-                window.open('main.html', '_self');
-            });
+             console.log('Current URL:', window.location.href);
+             window.location.href = 'main.html';
         });
 
 
